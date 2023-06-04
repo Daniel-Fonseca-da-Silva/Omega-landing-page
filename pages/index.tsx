@@ -1,6 +1,5 @@
 import AboutMe from "@/components/AboutMe";
 import Banner from "@/components/Banner";
-import Bannerr from "@/components/Bannerr";
 import Benefits from "@/components/Benefits";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
@@ -31,8 +30,7 @@ export default function Home() {
         {/* <Navbar /> */}
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
           <div className="w-screen h-screen">
-            <Bannerr />
-            {/* <Banner /> */}
+            <Banner />
             <FirstContainer />
             <SecondContainer />
             <StepLine />
