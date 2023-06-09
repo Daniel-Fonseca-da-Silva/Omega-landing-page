@@ -1,4 +1,4 @@
-import { glister1 } from "@/public/assets";
+import { pescadoOmega } from "@/public/assets";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -16,25 +16,26 @@ const FourthContainer = () => {
               <div className="block p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <Image
                   className="w-full rounded-lg"
-                  src={glister1}
-                  alt="Muchos beneficios"
+                  src={pescadoOmega}
+                  alt="Océano lleno de pescado de calidad"
                 />
               </div>
             </motion.div>
           </div>
           <div className="xs:pl-0 sm:pl-0 md:pl-10 lg:pl-32 xs:py-10 sm:py-10 md:py-0 sm:text-center">
-            <p className="lg:text-4xl xs:text-base sm:text-xl font-bodyFont tracking-wide leading-normal text-textDark">
-              <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text font-bold">
-                La pasta dental Glister
-              </span>{" "}
-              es una elección excepcional para cuidar la salud bucal de tus
-              hijos. Con una fórmula segura, protección contra las caries, un
-              agradable sabor y el respaldo de una marca confiable.
-            </p>
+            <div className="border-colorBaseOne shadow-md shadow-colorBaseOne PX bg-gray-100 hover:shadow-colorBaseTwo py-5 px-5">
+              <p className="lg:text-4xl xs:text-base sm:text-xl font-bodyFont tracking-wide leading-normal text-textDark">
+                <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text font-bold uppercase">
+                  Ingredientes:
+                </span>{" "}
+                Los provienen principalmente del Océano Pacífico, en las costas
+                de Perú, por donde circula la corriente marina de Humboldt,
+                siendo esta la fuente de ingredientes naturales más puros.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="w-1/5 border border-t border-gray-700"></div>
     </section>
   );
 };
