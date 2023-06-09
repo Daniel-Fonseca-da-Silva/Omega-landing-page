@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section className="w-full mx-auto py-10 mdl:py-24 flex flex-col items-center gap-4 lgl:gap-8 mdl:px-10 xl:px-4 transition-300 shadow-2xl bg-footerColor">
       <div className="w-10/12 -mb-10 -mt-10">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center xs:xs:py-5">
           <p className="xs:text-sm sm:text-sm md:text-base lg:text-lg xl:text-3xl font-bodyFont tracking-wide uppercase text-center">
             COPYRIGHT 2023 -{" "}
             <a
@@ -18,7 +18,7 @@ const Footer = () => {
           </p>
           <p className="xs:text-sm sm:text-sm md:text-base lg:text-lg xl:text-3xl md:text-basefont-bodyFont tracking-wide uppercase text-center">
             <Link
-              href="/termsOfUse"
+              href="/terms"
               target="_blank"
               className="text-textSpecialLinkColor hover:text-btnColor2"
             >
@@ -26,7 +26,7 @@ const Footer = () => {
             </Link>{" "}
             |{" "}
             <Link
-              href="/termsOfUse"
+              href="/terms"
               target="_blank"
               className="text-textSpecialLinkColor hover:text-btnColor2"
             >
@@ -34,7 +34,7 @@ const Footer = () => {
             </Link>{" "}
             |{" "}
             <a
-              href="mailto:enricoganchiel@gmail.dev"
+              href="https://wa.me/5524981579339"
               className="text-textSpecialLinkColor hover:text-btnColor2"
             >
               Contacto
