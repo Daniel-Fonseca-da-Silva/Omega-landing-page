@@ -1,178 +1,243 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const StepLine = () => {
   return (
     <section className="w-full mx-auto py-10 mdl:py-24 flex flex-col items-center gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
-      <div className="w-10/12">
+      <motion.div
+        className="w-10/12"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.7 }}
+      >
         <h2 className="lg:text-4xl md:text-4xl xm:pt-5 sm:pt-5 font-titleFont font-bold tracking-wide text-center uppercase xs:mt-5 text-textDark pb-10">
           Quiero obtener todos esos resultados ahora:
         </h2>
 
-        <ol className="relative border-l px-10 py-10 border-btnColor1 shadow-md shadow-btnColor1 PX bg-gray-100 ">
-          <li className="mb-10 border border-btnColor1 shadow-md shadow-btnColor1 px-2 py-2 rounded-md">
-            <div className="absolute w-3 h-3 bg-btnColor1 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-btnColor2 font-medium">
-              <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text text-center">
+        <ol className="relative border-l px-10 py-10 border-colorBaseOne shadow-md shadow-colorBaseOne PX bg-gray-100">
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-colorBaseTwo font-medium uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
                 {" "}
-                1ª BENEFICIO:
+                1ª Beneficio:
               </span>{" "}
-              75% MÁS EFICACIA PARA PULIR SUSTRATO DEL ESMALTE.
+              Función cerebral.
             </h3>
             <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
-              Pulir el sustrato del esmalte utilizando nuestra pasta dental
-              puede proporcionar beneficios estéticos y de salud bucal. Desde la
-              eliminación de manchas hasta la prevención de problemas dentales,
-              esta práctica puede contribuir a mantener una sonrisa hermosa y
-              una boca saludable.
+              El DHA, un componente clave del omega-3, desempeña un papel
+              fundamental en la estructura y función del cerebro. Es
+              especialmente importante para el desarrollo cerebral en niños y
+              puede ayudar a mejorar la función cognitiva en adultos, incluyendo
+              la memoria, el aprendizaje y la atención.
             </p>
           </li>
-          <li className="mb-10 border border-btnColor1 shadow-md shadow-btnColor1 px-2 py-2 rounded-md">
-            <div className="absolute w-3 h-3 bg-btnColor1 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-btnColor2 font-medium">
-              <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text text-center">
-                2ª BENEFICIO:
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-colorBaseTwo font-medium uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                2ª Beneficio:
               </span>{" "}
-              22% MÁS DE EFICACIA EN LA LIMPIEZA DE LA PELÍCULA MANCHADA DE
-              TABACO, CAFÉ, TÉ Y VINO.
+              Salud ocular.
             </h3>
             <p className="mb-10 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
-              ¿Estás cansado de gastar dinero en tratamientos mensuales de
-              blanqueamiento dental en el dentista? ¿Sabías que, en la mayoría
-              de los casos, la causa de que los dientes vuelvan a amarillearse
-              se debe al uso de una pasta de dientes de mala calidad?
+              El DHA también se encuentra en altas concentraciones en la retina
+              de los ojos. Estudios sugieren que el consumo adecuado de omega-3
+              puede ayudar a prevenir la degeneración ocular relacionada con la
+              edad y el desarrollo del ojo seco.
             </p>
           </li>
-          <li className="mb-10 border border-btnColor1 shadow-md shadow-btnColor1 px-2 py-2 rounded-md">
-            <div className="absolute w-3 h-3 bg-btnColor1 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-btnColor2 font-medium">
-              <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text text-center">
-                3ª BENEFICIO:
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-colorBaseTwo font-medium uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                3ª Beneficio:
               </span>{" "}
-              PREVENCIÓN DE LA CARIES DENTAL.
+              Reducción de la inflamación.
             </h3>
             <p className="mb-10 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
-              La caries dental es una de las enfermedades bucales{" "}
-              <span className="underline">más comunes</span>. Nuestro
-              dentífrico, especialmente hecho con{" "}
-              <span className="underline">fluoruro</span>, ayuda a{" "}
-              <span className="underline">prevenir</span> la formación de caries
-              al <span className="underline">reducir</span> la actividad
-              bacteriana y{" "}
-              <span className="underline">fortalecer los dientes</span>.
+              La inflamación crónica está asociada con una serie de condiciones
+              de salud, como enfermedades cardíacas, artritis y ciertos tipos de
+              cáncer. El omega-3 tiene propiedades antiinflamatorias y puede
+              ayudar a reducir la inflamación en el cuerpo.
             </p>
           </li>
-          <li className="mb-10 border border-btnColor1 shadow-md shadow-btnColor1 px-2 py-2 rounded-md">
-            <div className="absolute w-3 h-3 bg-btnColor1 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-btnColor2 font-medium">
-              <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text text-center">
-                4ª BENEFICIO:
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-colorBaseTwo font-medium uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                4ª Beneficio:
               </span>{" "}
-              AUMENTO DEL 42% EN LA LUMINOSIDAD DEL ESMALTE DENTAL.
+              Salud mental.
             </h3>
             <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
-              Nuestras{" "}
-              <span className="underline">pastas dentales de calidad </span>
-              contienen ingredientes activos como el peróxido de hidrógeno o
-              bicarbonato de sodio, que tienen{" "}
-              <span className="underline">propiedades blanqueadoras</span>. El
-              uso regular de estas pastas de dientes puede resultar en un{" "}
-              <span className="underline">aclaramiento</span> gradual y sutil
-              del esmalte dental, proporcionando un aspecto{" "}
-              <span className="underline">más luminoso a los dientes.</span>
+              Existen evidencias de que el consumo adecuado de omega-3 puede
+              tener efectos positivos en la salud mental. Puede ayudar a reducir
+              los síntomas de la depresión y la ansiedad, además de mejorar el
+              estado de ánimo y la calidad del sueño.
             </p>
           </li>
-          <li className="mb-10 border border-btnColor1 shadow-md shadow-btnColor1 px-2 py-2 rounded-md">
-            <div className="absolute w-3 h-3 bg-btnColor1 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-btnColor2 font-medium">
-              <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text text-center">
-                5ª BENEFICIO:
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-colorBaseTwo font-medium uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                5ª Beneficio:
               </span>{" "}
-              FÓRMULA SIN INGREDIENTES DERIVADOS DE ANIMALES.
+              Salud ósea.
             </h3>
             <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
-              Para aquellos que adoptan una{" "}
-              <span className="underline">dieta vegana</span> o tienen un{" "}
-              <span className="underline">estilo de vida vegano</span>, elegir
-              nuestra pasta dental{" "}
-              <span className="underline">
-                libre de ingredientes de origen animal
-              </span>{" "}
-              es fundamental para mantener la coherencia con sus{" "}
-              <span className="underline">principios y valores</span>. Esto les
-              proporciona una opción alineada con un estilo de vida{" "}
-              <span className="underline">
-                vegano completo, libre de cualquier explotación animal.
-              </span>
+              Estudios han demostrado que el omega-3 juega un papel en la salud
+              ósea, ayudando a aumentar la densidad mineral ósea y reducir la
+              pérdida ósea en ciertas condiciones, como la osteoporosis.
             </p>
           </li>
-          <li className="mb-10 border border-btnColor1 shadow-md shadow-btnColor1 px-2 py-2 rounded-md">
-            <div className="absolute w-3 h-3 bg-btnColor1 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-btnColor2 font-medium">
-              <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text text-center">
-                6ª BENEFICIO:
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-colorBaseTwo font-medium uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                7ª Beneficio:
               </span>{" "}
-              HASTA 198 USOS POR TUBO DE 200G.
+              Salud de la piel.
             </h3>
             <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
-              Nuestra pasta dental es{" "}
-              <span className="underline">altamente eficiente y económica</span>
-              , ya que{" "}
-              <span className="underline">
-                permite hasta 198 usos con un tubo de 200 gramos
-              </span>
-              , ofreciendo una serie de ventajas convincentes. Con ella,{" "}
-              <span className="underline">
-                ahorrarás dinero, obtendrás una higiene bucal eficiente,
-              </span>{" "}
-              disfrutarás de los beneficios para la salud, aprovecharás la
-              practicidad y contribuirás a la sostenibilidad ambiental. Haz la
-              elección inteligente e invierte en una pasta que ofrece el máximo
-              en economía y rendimiento.
+              El omega-3 puede ayudar a mantener la salud de la piel,
+              promoviendo una mejor hidratación, reduciendo la inflamación de la
+              piel y ayudando a tratar condiciones como el acné, la dermatitis y
+              la psoriasis.
             </p>
           </li>
-          <li className="mb-10 border border-btnColor1 shadow-md shadow-btnColor1 px-2 py-2 rounded-md">
-            <div className="absolute w-3 h-3 bg-btnColor1 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-btnColor2 font-medium">
-              <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text text-center">
-                7ª BENEFICIO:
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none text-colorBaseTwo font-medium uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                8ª Beneficio:
               </span>{" "}
-              ACCIÓN DE PULUDO SUAVE.
+              Evita la formación de coágulos.
             </h3>
             <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
-              Las pastas dentales de calidad contienen partículas finas o
-              ingredientes ligeramente abrasivos que ayudan a{" "}
-              <span className="underline">pulir suavemente</span> el esmalte
-              dental. Esto puede contribuir a la{" "}
-              <span className="underline">eliminación de manchas</span> más
-              persistentes y{" "}
-              <span className="underline">mejorar el brillo </span>natural de
-              los dientes.
+              El omega 3, especialmente el DHA y el EPA, tiene propiedades
+              anticoagulantes, reduciendo la formación de coágulos sanguíneos al
+              evitar que las plaquetas de la sangre se agrupen. Por esta razón,
+              esta grasa puede ayudar en la prevención de complicaciones graves,
+              como la trombosis venosa profunda o la embolia pulmonar, por
+              ejemplo.
             </p>
           </li>
-          <li className="mb-10 border border-btnColor1 shadow-md shadow-btnColor1 px-2 py-2 rounded-md">
-            <div className="absolute w-3 h-3 bg-btnColor1 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none font-medium text-btnColor2">
-              <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text text-center">
-                8ª BENEFICIO:
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none font-medium text-colorBaseTwo uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                9ª Beneficio:
               </span>{" "}
-              EQUILIBRIO DE TU MICROBIOMA ORAL.
+              Ayuda a combatir la depresión.
             </h3>
             <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
-              Mantener un equilibrio oral saludable utilizando una{" "}
-              <span className="underline">pasta dental de calidad</span> es
-              esencial para una buena salud bucal. No solo te{" "}
-              <span className="underline">
-                proporciona una limpieza eficaz y protección contra enfermedades
-                dentales
-              </span>
-              , sino que también te brinda un{" "}
-              <span className="underline">
-                aliento fresco y una sonrisa radiante.
-              </span>
+              El omega 3 protege las células del cerebro, mejorando su actividad
+              y llevando a un aumento de sustancias responsables de las
+              emociones, el estado de ánimo y el bienestar, como la serotonina,
+              la dopamina y la noradrenalina.
+            </p>
+          </li>
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none font-medium text-colorBaseTwo uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                10ª Beneficio:
+              </span>{" "}
+              Previene enfermedades autoinmunes.
+            </h3>
+            <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
+              Estudios muestran que el omega 3 puede ayudar a reducir el riesgo
+              de desarrollo de enfermedades autoinmunes, que ocurren cuando el
+              sistema inmunológico no reconoce las células sanas del cuerpo y
+              las ataca, destruyéndolas, como en el caso de la diabetes tipo 1 o
+              la esclerosis múltiple, por ejemplo. Además, esta grasa puede
+              ayudar en el tratamiento del lupus, la artritis reumatoide, la
+              colitis ulcerosa, la enfermedad de Crohn y la psoriasis.
+            </p>
+          </li>
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none font-medium text-colorBaseTwo uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                11ª Beneficio:
+              </span>{" "}
+              Ayuda a controlar la glucemia.
+            </h3>
+            <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
+              Estudios muestran que el omega 3 puede ayudar a reducir los
+              niveles de azúcar en la sangre al mejorar la resistencia de la
+              hormona insulina, pudiendo ser un aliado importante en el
+              tratamiento de la diabetes tipo 2.
+            </p>
+          </li>
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none font-medium text-colorBaseTwo uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                12ª Beneficio:
+              </span>{" "}
+              Previene el Alzheimer.
+            </h3>
+            <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
+              Estudios muestran que el consumo de omega 3 puede reducir la
+              pérdida de memoria, la falta de atención y la dificultad para el
+              razonamiento lógico, lo cual puede disminuir el riesgo de
+              desarrollar Alzheimer al mejorar el funcionamiento de las neuronas
+              cerebrales. Sin embargo, se requieren más estudios que confirmen
+              este beneficio.
+            </p>
+          </li>
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none font-medium text-colorBaseTwo uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                13ª Beneficio:
+              </span>{" "}
+              Controla el déficit de atención y la hiperactividad.
+            </h3>
+            <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
+              Varios estudios demuestran que la deficiencia de omega 3 está
+              asociada al trastorno de déficit de atención y hiperactividad
+              (TDAH) en niños, y que aumentar el consumo de omega 3,
+              especialmente EPA, puede reducir los síntomas de este trastorno,
+              ayudando a mejorar la atención, la finalización de tareas y
+              reducir la hiperactividad, la impulsividad, la agitación y la
+              agresividad.
+            </p>
+          </li>
+          <li className="mb-10 border border-colorBaseOne shadow-md shadow-colorBaseOne px-2 py-2 rounded-md">
+            <div className="absolute w-3 h-3 bg-colorBaseOne rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="mb-1 xs:text-base sm:text-base md:text-lg lg:text-xl text-sm leading-none font-medium text-colorBaseTwo uppercase font-titleSecondFont">
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                14ª Beneficio:
+              </span>{" "}
+              Mejora el rendimiento muscular.
+            </h3>
+            <p className="mb-4 xs:text-sm sm:text-sm md:text-base lg:text-lg text-base font-normal text-textDark">
+              La suplementación con omega 3 puede ayudar a reducir la
+              inflamación muscular causada por el ejercicio físico, acelerando
+              la recuperación de los músculos y disminuyendo el dolor después
+              del entrenamiento. El omega 3 también ayuda a mejorar el estado de
+              ánimo y potenciar el rendimiento en los entrenamientos, además de
+              ser importante para facilitar el inicio de actividades físicas o
+              para personas en tratamientos médicos, como fisioterapia o
+              rehabilitación cardíaca.
             </p>
           </li>
         </ol>
-      </div>
+      </motion.div>
+      <Link href="https://wa.me/5524981579339" target="_blank">
+        <motion.button
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.5, delay: 0.9 }}
+          className="w-full my-10 text-sm rounded-md text-textGreen tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorBaseTwo hover:to-colorBaseOne font-bold py-2 xs:px-5 sm:px-5 md:px-8 lg:px-40 animate-bounce border shadow-md shadow-colorBaseTwo xs:h-20 uppercase font-titleSecondFont hover:animate-none"
+        >
+          Pónlo a prueba
+        </motion.button>
+      </Link>
+      <div className="w-1/5 border border-t border-colorBaseTwo"></div>
     </section>
   );
 };
