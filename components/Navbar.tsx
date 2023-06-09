@@ -236,7 +236,7 @@ const Navbar = () => {
                     initial={{ y: -20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.1, ease: "easeIn" }}
-                    href="https://wa.me/5524981579339"
+                    href="https://wa.me/5491156177549"
                     target="_blank"
                   >
                     <span className="mr-1 w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">

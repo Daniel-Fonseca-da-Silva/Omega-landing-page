@@ -17,7 +17,7 @@ const Contact = () => {
           <p className="xs:text-base xs:text-center sm:text-base md:text-lg lg:text-xl font-bodyFont tracking-wider py-6">
             Nuestro equipo está disponible para ayudarte.
           </p>
-          <Link href="https://wa.me/5524981579339" target="_blank">
+          <Link href="https://wa.me/5491156177549" target="_blank">
             <button className="w-full my-10 text-sm font-titleSecondFont rounded-md text-textGreen tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorBaseTwo hover:to-colorBaseOne font-bold py-2 px-4 animate-bounce border shadow-md shadow-colorBaseTwo xs:px-5 sm:px-5 md:px-8 lg:px-40 xs:h-20 uppercase">
               Quiero saber más!
             </button>

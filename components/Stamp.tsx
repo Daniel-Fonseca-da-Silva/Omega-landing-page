@@ -31,7 +31,7 @@ const Stamp = () => {
               reembolso y recibirás la devolución completa de tu dinero.
             </p>
             <Link
-              href="https://wa.me/5524981579339"
+              href="https://wa.me/5491156177549"
               className="w-full"
               target="_blank"
             >

@@ -34,7 +34,7 @@ const Footer = () => {
             </Link>{" "}
             |{" "}
             <a
-              href="https://wa.me/5524981579339"
+              href="https://wa.me/5491156177549"
               className="text-textSpecialLinkColor hover:text-btnColor2"
             >
               Contacto

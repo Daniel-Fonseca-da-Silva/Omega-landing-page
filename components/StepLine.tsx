@@ -227,7 +227,7 @@ const StepLine = () => {
           </li>
         </ol>
       </motion.div>
-      <Link href="https://wa.me/5524981579339" target="_blank">
+      <Link href="https://wa.me/5491156177549" target="_blank">
         <motion.button
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

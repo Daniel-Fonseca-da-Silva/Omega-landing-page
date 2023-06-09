@@ -57,7 +57,7 @@ const Benefits = () => {
           todo lo que lograrás a través de este producto.
         </h2>
       </div>
-      <Link href="https://wa.me/5524981579339" target="_blank">
+      <Link href="https://wa.me/5491156177549" target="_blank">
         <button className="w-full text-sm rounded-md text-textGreen tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorBaseTwo hover:to-colorBaseOne font-bold py-2 xs:px-5 sm:px-5 md:px-8 lg:px-40 animate-bounce border shadow-md shadow-colorBaseTwo xs:h-20 uppercase font-titleSecondFont">
           Quiero incorporar ya!
         </button>
