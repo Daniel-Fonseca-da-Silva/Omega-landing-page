@@ -24,8 +24,9 @@ module.exports = {
         xl: "1280px",
       },
       fontFamily: {
-        bodyFont: ["Barlow Condensed", "sans-serif"],
-        titleFont: ["Roboto", "sans-serif"],
+        bodyFont: ["Glegoo", "serif"],
+        titleFont: ["Catamaran", "sans-serif"],
+        titleSecondFont: ["Averia Serif Libre", "cursive"],
       },
       boxShadow: {
           navBar: "0 10px 30px -10px rgba(2, 12, 27, 0.7)",
@@ -34,11 +35,8 @@ module.exports = {
         bodyColor: "#F9FBE7",
         colorBaseOne: "#69c24a",
         colorBaseTwo: "#155320",
-        textOrangeLight: "#ff8c35",
-        textOrangeStrong: "#FC4F00",
         textPriceColor: "#1ebed7",
         textSpecialLinkColor: "#a52a53",
-        textSpecialLinkColorHover: "#1ebed7",
         textLight: "#FFF",
         textDark: "#4d4d4d",
         textGray: "#CCC",
@@ -46,9 +44,6 @@ module.exports = {
         darkBanner: "#090909",
         btnColor1: "#19A7CE",
         btnColor2: "#5F8D4E",
-        cardColor: "#3a1d12",
-        btnYellowGradient: "#facc15",
-        btnGreen: "#14dd31",
         hoverColor: "rgba(100, 255, 218, 0.1)"
       },
     },
