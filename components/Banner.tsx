@@ -13,8 +13,8 @@ const Banner = () => {
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.1 }}
-              className="uppercase text-2xl text-textDark font-titleFont font-bold tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text
-              xs:text-center xs:mb-5 xs:text-xl sm:text-xl xl:ml-24"
+              className="uppercase text-2xl text-textDark font-titleSecondFont font-bold tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text
+              xs:text-center xs:mb-5 xs:text-xl sm:text-xl md:text-left xl:ml-24"
             >
               Nutrilite
             </motion.p>
@@ -22,7 +22,7 @@ const Banner = () => {
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="uppercase lg:text-8xl xs:text-4xl sm:text-4xl -mt-14 font-titleFont font-bold tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text xs:text-center xs:mb-5 sm:-mt-12 sm:pt-7 md:pt-7 lg:pt-3 lgl:pt-3 xl:pt-14"
+              className="uppercase lg:text-8xl xs:text-4xl sm:text-4xl -mt-14 font-titleFont font-bold tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text xs:text-center xs:mb-5 sm:-mt-12 sm:pt-7 md:pt-7 md:text-left lg:pt-3 lgl:pt-3 xl:pt-14"
             >
               Omega 3 Plus
             </motion.h1>
@@ -30,7 +30,7 @@ const Banner = () => {
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="lg:text-4xl font-bodyFont font-bold tracking-wide -mt-5 md:px-0 lg:px-0 xl:pt-10 text-textDark xs:text-center"
+              className="lg:text-4xl font-bodyFont font-bold tracking-wide -mt-5 md:px-0 lg:px-0 xl:pt-10 text-textDark xs:text-center md:text-left"
             >
               Los{" "}
               <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
@@ -47,17 +47,15 @@ const Banner = () => {
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className="lg:text-3xl font-bodyFont tracking-wide font-light -mt-5 xs:pb-10 sm:pt-2 md:px-0 lg:px-0 text-textDark text-justify xl:pt-10 xs:text-center"
+              className="lg:text-3xl font-bodyFont tracking-wide font-light -mt-5 xs:pb-10 sm:pt-5 md:px-0 lg:px-0 text-textDark text-justify xl:pt-10 xs:text-center md:text-left"
             >
               No se{" "}
               <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
-                oxidan ni huelen a pescado
-                <br />
+                oxidan ni huelen a pescado,{" "}
               </span>
-              Suplemento dietario a base de aceite de <br /> pescado y vitamina{" "}
-              E en cápsulas blandas.
+              suplemento dietario a base de aceite de pescado y vitamina E en
+              cápsulas blandas.
             </motion.p>
-
             <Link
               href="https://wa.me/5524981579339"
               className="w-full"
@@ -67,12 +65,13 @@ const Banner = () => {
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="w-full h-14 text-sm font-titleFont rounded-md text-textLight tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorto-colorBaseTwo hover:to-colorfrom-colorBaseOne font-bold py-2 px-4 animate-bounce border shadow-md shadow-colorfrom-colorBaseOne xs:text-sm xs:h-20 xs:mt-5 uppercase"
+                className="w-full h-14 text-sm rounded-md text-textLight tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorBaseTwo hover:to-colorBaseOne font-bold py-2 px-4 animate-bounce hover:animate-none border shadow-md shadow-colorBaseTwo xs:text-sm xs:h-20 xs:mt-5 uppercase font-titleSecondFont"
               >
                 Quiero mi omega ahora!
               </motion.button>
             </Link>
           </div>
+
           <motion.div
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -80,9 +79,9 @@ const Banner = () => {
             className="mx-auto md:w-2/4 xl:w-4/12"
           >
             <Image
-              className="transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+              className="transition-all duration-300 rounded-lg cursor-pointer filter grayscale-0 hover:grayscale"
               src={mainPicture}
-              alt=""
+              alt="Envase de omega 3 Plus Nutrilite"
             />
           </motion.div>
         </div>
