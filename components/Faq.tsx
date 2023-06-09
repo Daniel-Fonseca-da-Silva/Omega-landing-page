@@ -11,7 +11,7 @@ const Faq = () => {
       >
         <h2 className="xs:text-base sm:text-base md:text-lg lg:text-4xl font-titleFont font-bold tracking-wide text-center uppercase pb-5 text-textDark">
           PREGUNTAS FRECUENTES{" "}
-          <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text text-center">
+          <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
             (FAQ)
           </span>
           :
@@ -27,8 +27,7 @@ const Faq = () => {
                 aria-controls="accordion-collapse-body-1"
               >
                 <span className="font-bodyFont text-textDark xs:text-sm sm:text-sm md:text-base lg:text-xl">
-                  ¿Por qué debo usar la Pasta de dientes multiacción con
-                  fluoruro de Glister?
+                  ¿Por qué Nutrilite Omega 3 Plus es único en el mercado?
                 </span>
                 <svg
                   data-accordion-icon
@@ -52,13 +51,12 @@ const Faq = () => {
             >
               <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
                 <p className="mb-2 font-bodyFont text-textDark xs:text-sm sm:text-sm md:text-base lg:text-xl">
-                  La Pasta de dientes multiacción con fluoruro de Glister
-                  contiene una fórmula bien balanceada para toda la familia.
-                  Contiene un agente pulidor suave y de origen natural (sílice),
-                  que limpia y ayuda a eliminar las manchas para blanquear los
-                  dientes. Está completamente probado para garantizar la
-                  eficacia en la reducción de las caries y el suministro de
-                  flúor a los dientes.
+                  Nuestra pesca proviene del Océano Pacífico. Además, tenemos un{" "}
+                  <span className="underline">método propio y exclusivo</span>{" "}
+                  para extraer omega 3 del aceite de pescado y refinarlo. Es un
+                  proceso{" "}
+                  <span className="underline">patentado de alta calidad</span>{" "}
+                  que tiene una sustentabilidad de suministro a largo plazo.
                 </p>
               </div>
             </div>
@@ -72,7 +70,8 @@ const Faq = () => {
                 aria-controls="accordion-collapse-body-2"
               >
                 <span className="font-bodyFont text-textDark xs:text-sm sm:text-sm md:text-base lg:text-xl">
-                  ¿Qué es la acción reparadora de dientes Reminact?
+                  ¿Si el pescado es parte de mi dieta debo consumir un
+                  suplemento de omega 3?
                 </span>
                 <svg
                   data-accordion-icon
@@ -96,15 +95,18 @@ const Faq = () => {
             >
               <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
                 <p className="mb-2 font-bodyFont text-textDark xs:text-sm sm:text-sm md:text-base lg:text-xl">
-                  Incluso con el cuidado bucal adecuado, los ácidos de la placa
-                  pueden eliminar los minerales clave del esmalte dental,
-                  debilitando su capacidad protectora y provocando caries. Este
-                  proceso se conoce como desmineralización. El flúor en la pasta
-                  dental ayuda a restaurar el esmalte dental, un proceso al que
-                  nos referimos como Reminact Acción reparadora dental. Este
-                  proceso ayuda a depositar minerales nuevamente en el esmalte
-                  para fortalecer los dientes y hacerlos más resistentes a las
-                  caries.
+                  Siempre es recomendable comer alimentos naturales ricos en
+                  ácidos grasos omega 3, de los cuales, el pescado de mar de
+                  aguas frías y profundas son una de las mejores fuentes, pero
+                  si no comes pescado de mar{" "}
+                  <span className="underline">
+                    al menos dos veces por semana
+                  </span>
+                  , los suplementos{" "}
+                  <span className="underline">
+                    Nutrilite Omega 3 Plus pueden ayudarte a{" "}
+                  </span>
+                  obtener EPA y DHA que quizás falten en tu dieta.
                 </p>
               </div>
             </div>
@@ -118,8 +120,7 @@ const Faq = () => {
                 aria-controls="accordion-collapse-body-3"
               >
                 <span className="font-bodyFont text-textDark xs:text-sm sm:text-sm md:text-base lg:text-xl">
-                  ¿La Pasta de dientes multiacción con fluoruro de Glister
-                  contiene lejía?
+                  ¿Cuales con las instrucciones de uso?
                 </span>
                 <svg
                   data-accordion-icon
@@ -143,8 +144,9 @@ const Faq = () => {
             >
               <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
                 <p className="mb-2 font-bodyFont text-textDark xs:text-sm sm:text-sm md:text-base lg:text-xl">
-                  No, la Pasta de dientes multiacción con fluoruro de Glister no
-                  contiene blanqueadores químicos.
+                  1 cápsula blanda{" "}
+                  <span className="underline">3 veces al día</span> con las
+                  comidas
                 </p>
               </div>
             </div>
@@ -158,8 +160,7 @@ const Faq = () => {
                 aria-controls="accordion-collapse-body-4"
               >
                 <span className="font-bodyFont text-textDark xs:text-sm sm:text-sm md:text-base lg:text-xl">
-                  ¿La Pasta de dientes multiacción con fluoruro de Glister es
-                  concentrada?
+                  ¿Cuál es el mejor momento para tomar omega 3 y vitaminas?
                 </span>
                 <svg
                   data-accordion-icon
@@ -183,9 +184,16 @@ const Faq = () => {
             >
               <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
                 <p className="mb-2 font-bodyFont text-textDark xs:text-sm sm:text-sm md:text-base lg:text-xl">
-                  No, la Pasta de dientes multiacción con fluoruro de Glister es
-                  un producto{" "}
-                  <span className="underline"> listo para usarse</span>.
+                  El mejor momento para tomar omega 3 es durante las principales
+                  comidas, como{" "}
+                  <span className="underline">
+                    el desayuno, el almuerzo o la cena
+                  </span>
+                  . Esto se debe a que, como se explicó,{" "}
+                  <span className="underline">
+                    los ácidos grasos se absorben mejor en presencia de grasas
+                  </span>
+                  .
                 </p>
               </div>
             </div>
@@ -199,8 +207,7 @@ const Faq = () => {
                 aria-controls="accordion-collapse-body-5"
               >
                 <span className="font-bodyFont text-textDark xs:text-sm sm:text-sm md:text-base lg:text-xl">
-                  ¿La Pasta de dientes multiacción con fluoruro de Glister es
-                  apta para dientes sensibles?
+                  ¿Cuál es la mejor edad para tomar omega 3?
                 </span>
                 <svg
                   data-accordion-icon
@@ -224,12 +231,13 @@ const Faq = () => {
             >
               <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
                 <p className="mb-2 font-bodyFont text-textDark xs:text-sm sm:text-sm md:text-base lg:text-xl">
-                  La Pasta de dientes multiacción con fluoruro de Glister
-                  limpiará eficazmente todos los dientes y ayudará a proteger
-                  contra las caries dentales. Sin embargo, no está especialmente
-                  formulada para personas con dientes sensibles. Si tienes
-                  dientes sensibles, debes acudir a un dentista para recibir el
-                  tratamiento adecuado.
+                  La ingesta de omega 3 es segura y{" "}
+                  <span className="underline">
+                    se puede suplementar a cualquier edad
+                  </span>
+                  , no hay contradicciones. Sin embargo, para cada etapa de la
+                  vida, la suplementación debe ser supervisada por un médico o
+                  nutricionista.
                 </p>
               </div>
             </div>
