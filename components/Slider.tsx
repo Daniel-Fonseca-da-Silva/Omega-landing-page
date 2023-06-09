@@ -1,32 +1,27 @@
-import {
-  testimo0,
-  testimo1,
-  testimo2,
-  testimo3,
-  testimo4,
-  testimo5,
-} from "@/public/assets";
+import { testimo0, testimo1 } from "@/public/assets";
 import Image from "next/image";
 
 const Slider = () => {
   return (
     <section className="w-full mx-auto mdl:py-24 flex flex-col items-center gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
       <div className="w-10/12 my-10 flex flex-col items-center">
-        <h2 className="lg:text-4xl xs:text-base sm:text-xl font-bodyFont font-bold tracking-wide text-center uppercase text-textDark">
-          Probada por{" "}
-          <span className="bg-btnColor2 text-textLight">
-            diversas personas alrededor del mundo!
-          </span>
-        </h2>
-        <p className="lg:text-2xl xs:text-base sm:text-lg font-bodyFont tracking-wide text-center mt-4 text-textDark">
-          La pasta dental Glister ha recibido una{" "}
-          <span className="underline">
-            serie de testimonios de clientes satisfechos
-          </span>{" "}
-          que han experimentado resultados sorprendentes y beneficios
-          significativos al usar este producto.
-        </p>
+        <div className="border-colorBaseOne shadow-md shadow-colorBaseOne PX bg-gray-100 hover:shadow-colorBaseTwo py-5 px-5">
+          <h2 className="lg:text-4xl xs:text-base sm:text-xl font-titleFont font-bold tracking-wide text-center uppercase text-textDark">
+            Probado por{" "}
+            <span className="bg-colorBaseTwo text-textLight animate-pulse">
+              diversas personas alrededor del mundo!
+            </span>
+          </h2>
 
+          <p className="lg:text-2xl xs:text-base sm:text-lg font-bodyFont tracking-wide text-center mt-4 text-textDark">
+            El omega-3 de nutrilite ya ha recibido una{" "}
+            <span className="underline">
+              serie de testimonios de clientes satisfechos
+            </span>{" "}
+            que han experimentado resultados sorprendentes y beneficios
+            significativos al usar este producto.
+          </p>
+        </div>
         <div
           id="gallery"
           className="relative w-full mt-5"
@@ -39,7 +34,7 @@ const Slider = () => {
               <Image
                 className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 src={testimo0}
-                alt="Testimonio cero"
+                alt="Testimonio chica Gabriela"
               />
             </div>
             {/* <!-- Item 1 --> */}
@@ -47,41 +42,41 @@ const Slider = () => {
               <Image
                 className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 src={testimo1}
-                alt="Testimonio uno"
+                alt="Testimonio senor Julian"
               />
             </div>
             {/* Item 2 */}
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            {/* <div className="hidden duration-700 ease-in-out" data-carousel-item>
               <Image
                 className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 src={testimo2}
                 alt="Testimonio dos"
               />
-            </div>
+            </div> */}
             {/* Item 3 */}
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            {/* <div className="hidden duration-700 ease-in-out" data-carousel-item>
               <Image
                 className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 src={testimo3}
                 alt="Testimonio tres"
               />
-            </div>
+            </div> */}
             {/* Item 4 */}
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            {/* <div className="hidden duration-700 ease-in-out" data-carousel-item>
               <Image
                 className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 src={testimo4}
                 alt="Testimonio cuatro"
               />
-            </div>
+            </div> */}
             {/* Item 5 */}
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            {/* <div className="hidden duration-700 ease-in-out" data-carousel-item>
               <Image
                 className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 src={testimo5}
                 alt="Depoimento cinco"
               />
-            </div>
+            </div> */}
           </div>
           {/* <!-- Slider controls --> */}
           <button
@@ -129,12 +124,12 @@ const Slider = () => {
                   d="M9 5l7 7-7 7"
                 ></path>
               </svg>
-              <span className="sr-only">Próximo</span>
+              <span className="sr-only">Siguiente</span>
             </span>
           </button>
         </div>
       </div>
-      <div className="w-1/5 border border-t border-gray-700"></div>
+      <div className="w-1/5 border border-t border-colorBaseTwo"></div>
     </section>
   );
 };
