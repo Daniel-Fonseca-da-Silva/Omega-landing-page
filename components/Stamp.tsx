@@ -1,5 +1,6 @@
 import { garantia } from "@/public/assets";
 import Image from "next/image";
+import Link from "next/link";
 
 const Stamp = () => {
   return (
@@ -14,7 +15,7 @@ const Stamp = () => {
                   src={garantia}
                   width={500}
                   height={500}
-                  alt="Criptomoedas"
+                  alt="El símbolo de nuestra garantía Nutrilite."
                 />
               </div>
             </div>
@@ -29,9 +30,15 @@ const Stamp = () => {
               simplemente envíame un único correo electrónico solicitando el
               reembolso y recibirás la devolución completa de tu dinero.
             </p>
-            <button className="w-full h-14 text-sm font-titleFont rounded-md text-textGreen tracking-wide bg-gradient-to-r from-btnColor1 to-btnColor2 hover:from-btnColor2 hover:to-btnColor1 font-bold py-2 px-4 animate-bounce border shadow-md shadow-btnColor1 xs:text-sm xs:h-20 xs:mt-5 uppercase">
-              ¡Quiero probar hasta los 90 días!
-            </button>
+            <Link
+              href="https://wa.me/5524981579339"
+              className="w-full"
+              target="_blank"
+            >
+              <button className="w-full h-14 text-sm font-titleFont rounded-md text-textLight tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorBaseTwo hover:to-colorBaseOne font-bold py-2 px-4 animate-bounce border shadow-md shadow-colorBaseTwo xs:text-sm xs:h-20 xs:mt-5 uppercase font-titleSecondFont">
+                ¡Quiero probar hasta los 90 días!
+              </button>
+            </Link>
           </div>
         </div>
       </div>
