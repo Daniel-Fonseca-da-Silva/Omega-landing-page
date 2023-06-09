@@ -1,72 +1,41 @@
-import { superPreview } from "@/public/assets";
+import { nutricionNutrilite } from "@/public/assets";
 import Image from "next/image";
-import { BsPatchCheckFill } from "react-icons/bs";
+import Link from "next/link";
+import { GiMedicines } from "react-icons/gi";
 
 const AboutMe = () => {
   const items = [
     {
       id: 1,
-      text: "Agua.",
+      text: "Una porción de Nutrilite Omega Plus te aporta 900mg de omega 3 que necesitas diariamente.",
     },
     {
       id: 2,
-      text: "Sorbitol: Es un alcohol extraído del azúcar que mantiene la humedad en el producto.",
+      text: "Te brinda ácidos grasos como EPA 450mg y DHA 450mg.",
     },
     {
       id: 3,
-      text: "Sílice hidratada: Agente abrasivo que sirve para limpiar y dar brillo a los dientes.",
+      text: "La declaración de la Unión Europea recomienda 250mg de ácidos grasos para un efecto beneficioso.",
     },
     {
       id: 4,
-      text: "Glicerina: Ayuda a disolver los ingredientes y a prevenir la sequedad o el endurecimiento, manteniendo el producto suave.",
+      text: "Cada lote de aceite de pescado es sometido a pruebas de calidad y pureza, cumpliendo los estándares más rigurosos de la industria.",
     },
     {
       id: 5,
-      text: "Propilenglicol: Es un humectante que mantiene el producto hidratado y también ayuda a disolver los diversos ingredientes.",
+      text: "Los estándares de calidad del aceite de pescado usado en la fabricación de nuestro Omega 3 Plus son los recomendados por la World Health Organization.",
     },
     {
       id: 6,
-      text: "Lauril sulfato de sodio: Agente que produce espuma para ayudar a distribuir el producto en la boca y eliminar los residuos de los alimentos.",
+      text: "Está encapsulado al vacío y tiene vitamina E, que evita la oxidación y mantiene los nutrientes intactos.",
     },
     {
       id: 7,
-      text: "Xilitol: Edulcorante natural presente en las fibras de las plantas.",
+      text: "Su producción no afecta al sistema marino.",
     },
     {
       id: 8,
-      text: "PEG-8: Es una molécula formada por varias moléculas de polietilenglicol que actúa como humectante y solvente, controlando la viscosidad de la pasta de dientes.",
-    },
-    {
-      id: 9,
-      text: "Aroma: Tiene un aroma suave a mentol.",
-    },
-    {
-      id: 10,
-      text: "CI 77891: Dióxido de titanio, un colorante utilizado para dar el color blanco.",
-    },
-    {
-      id: 11,
-      text: "Goma de xantano: Espesante de origen natural.",
-    },
-    {
-      id: 12,
-      text: "Fluoruro de sodio: Molécula que proporciona iones de flúor.",
-    },
-    {
-      id: 13,
-      text: "Sacarina: Edulcorante que mejora el sabor.",
-    },
-    {
-      id: 14,
-      text: "Metilparabeno: Conservante que previene la formación de hongos, bacterias y otros microorganismos.",
-    },
-    {
-      id: 15,
-      text: "Propilparabeno: Conservante que previene la formación de hongos, bacterias y otros microorganismos.",
-    },
-    {
-      id: 15,
-      text: "Limoneno: Aromatizante cítrico de origen natural y solvente.",
+      text: "No tienen sabor u olor a pescado como otros.",
     },
   ];
   return (
@@ -76,31 +45,40 @@ const AboutMe = () => {
           <div className="mx-auto md:w-2/4">
             <Image
               className="transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              src={superPreview}
-              alt="Pasta dental Glister demostración"
+              src={nutricionNutrilite}
+              alt="Envase de Omega 3 Plus de 30 cápsulas y de 90 cápsulas de Nutrilite"
             />
           </div>
           <div className="mx-auto md:w-2/4">
             <h2 className="font-titleFont xs:text-base xs:text-center sm:text-base xs:pt-40 md:pt-0 md:text-lg lg:text-5xl font-semibold uppercase text-textDark">
-              Análisis de los{" "}
-              <span className="bg-gradient-to-r from-btnColor1 to-btnColor2 text-transparent bg-clip-text text-center">
-                ingredientes
+              ¿Por qué es{" "}
+              <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
+                bueno para ti?
               </span>
             </h2>
             <ul className="flex flex-col items-start">
               {items.map((item) => (
                 <li key={item.id} className="flex items-center py-2">
-                  <BsPatchCheckFill className="text-btnColor1 mr-2" />
+                  <GiMedicines className="text-colorBaseOne mr-2" />
                   <p className="font-bodyFont xs:text-xs sm:text-sm md:text-base lg:text-1xl text-textDark">
                     {item.text}
                   </p>
                 </li>
               ))}
             </ul>
+            <Link
+              href="https://wa.me/5524981579339"
+              className="w-full"
+              target="_blank"
+            >
+              <button className="w-full h-14 text-sm rounded-md text-textLight tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorBaseTwo hover:to-colorBaseOne font-bold py-2 px-4 animate-bounce border shadow-md shadow-colorBaseTwo xs:text-sm xs:h-20 xs:mt-5 uppercase font-titleSecondFont">
+                ¡Aprovecha esta oferta imperdible!
+              </button>
+            </Link>
           </div>
         </div>
       </div>
-      <div className="w-1/5 border border-t border-gray-700"></div>
+      <div className="w-1/5 border border-t border-colorBaseTwo"></div>
     </section>
   );
 };
