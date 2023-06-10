@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <section className="w-full mx-auto py-10 mdl:py-24 flex flex-col items-center gap-4 lgl:gap-8 mdl:px-10 xl:px-4 bg-gradient-to-r from-colorBaseTwo to-colorBaseOne transition-300 shadow-2xl">
+    <section className="w-full mx-auto mdl:py-24 flex flex-col items-center gap-4 lgl:gap-8 mdl:px-10 xl:px-4 bg-gradient-to-r from-colorBaseTwo to-colorBaseOne transition-300 shadow-2xl">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -18,7 +18,7 @@ const Contact = () => {
             Nuestro equipo está disponible para ayudarte.
           </p>
           <Link href="https://wa.me/5491156177549" target="_blank">
-            <button className="w-full my-10 text-sm font-titleSecondFont rounded-md text-textGreen tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorBaseTwo hover:to-colorBaseOne font-bold py-2 px-4 animate-bounce border shadow-md shadow-colorBaseTwo xs:px-5 sm:px-5 md:px-8 lg:px-40 xs:h-20 uppercase">
+            <button className="w-full text-sm font-titleSecondFont rounded-md text-textGreen tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorBaseTwo hover:to-colorBaseOne font-bold py-2 px-4 animate-bounce border shadow-md shadow-colorBaseTwo xs:px-5 md:px-8 lg:px-40 xs:h-20 uppercase">
               Quiero saber más!
             </button>
           </Link>

@@ -14,7 +14,7 @@ const FirstContainer = () => {
           de agua fría:{" "}
           <span className="font-bold"> Sardinas, Caballa y Anchoas</span>.
         </h2>
-        <h2 className="text-4xl font-titleSecondFont tracking-wide text-center mt-4 xx:text-center xx:text-xs xs:text-lg sm:text-lg md:text-4xl lg:text-4xl xs:pb-5 sm:pb-5">
+        <h2 className="text-4xl font-titleSecondFont tracking-wide text-center mt-4 xs:text-lg sm:text-lg md:text-4xl lg:text-4xl xs:pb-5 sm:pb-5">
           Los ácidos grasos omega 3 colaboran con la salud del sistema
           cardiovascular. <br />{" "}
           <span className="bg-black">
