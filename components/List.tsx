@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BsPatchCheckFill } from "react-icons/bs";
+import { GiMedicines } from "react-icons/gi";
 
 const List = () => {
   const items = [
@@ -35,14 +35,14 @@ const List = () => {
     <section className="w-full mx-auto py-10 mdl:py-24 flex flex-col items-center gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
       <div className="w-10/12 flex flex-col items-center">
         <div className="block max-w-container p-6 bg-gradient-to-r from-colorBaseOne to-colorBaseTwo transition-300  rounded-lg border-1 shadow-md border-colorBaseTwo drop-shadow-sm shadow-colorBaseTwo mb-2">
-          <h2 className="mb-2 xs:text-xl sm:text-xl md:text-xl lg:text-4xl font-bold tracking-tight  text-textLight text-center uppercase">
+          <h2 className="mb-2 xx:text-base xs:text-xl sm:text-xl md:text-xl lg:text-4xl font-bold tracking-tight  text-textLight text-center uppercase">
             TODO LO QUE RECIBES AL <br /> ADQUIRIR NUESTRO OMEGA 3
           </h2>
           <ul className="flex flex-col items-center">
             {items.map((item) => (
               <li key={item.id} className="flex items-center py-2">
-                <BsPatchCheckFill className="text-textLight mr-2" />
-                <p className="font-bodyFont xs:text-xs sm:text-sm md:text-base lg:text-1xl">
+                <GiMedicines className="text-textLight mr-2" />
+                <p className="font-bodyFont xx:text-xs xs:text-xs sm:text-sm md:text-base lg:text-1xl">
                   {item.text}
                 </p>
               </li>

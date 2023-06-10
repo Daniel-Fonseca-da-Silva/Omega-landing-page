@@ -13,7 +13,7 @@ const Benefits = () => {
             fundamentales que tu cuerpo necesita.{" "}
           </span>
           Su fórmula balanceada contiene{" "}
-          <span className="underline">vitamina E y aporta 600mg EPA y DHA</span>
+          <span className="underline">vitamina E y aporta 450mg EPA y DHA</span>
           .
         </h2>
         <div className="flex drop-shadow-2x">

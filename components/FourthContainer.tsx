@@ -28,9 +28,10 @@ const FourthContainer = () => {
                 <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text font-bold uppercase">
                   Ingredientes:
                 </span>{" "}
-                Los provienen principalmente del Océano Pacífico, en las costas
-                de Perú, por donde circula la corriente marina de Humboldt,
-                siendo esta la fuente de ingredientes naturales más puros.
+                Los peces provienen principalmente del Océano Pacífico, en las
+                costas de Perú, por donde circula la corriente marina de
+                Humboldt, siendo esta la fuente de ingredientes naturales más
+                puros.
               </p>
             </div>
           </div>

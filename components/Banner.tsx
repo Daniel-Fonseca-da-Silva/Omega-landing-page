@@ -13,8 +13,7 @@ const Banner = () => {
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.1 }}
-              className="uppercase text-2xl text-textDark font-titleSecondFont font-bold tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text
-              xs:text-center xs:mb-5 xs:text-xl sm:text-xl md:text-left xl:ml-24"
+              className="uppercase text-2xl text-textDark font-titleSecondFont font-bold tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text xx:text-center xx:mb-16 xs:text-center xs:mb-5 xs:text-xl sm:text-xl md:text-left xl:ml-24"
             >
               Nutrilite
             </motion.p>
@@ -22,7 +21,7 @@ const Banner = () => {
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="uppercase lg:text-8xl xs:text-4xl sm:text-4xl -mt-14 font-titleFont font-bold tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text xs:text-center xs:mb-5 sm:-mt-12 sm:pt-7 md:pt-7 md:text-left lg:pt-3 lgl:pt-3 xl:pt-14"
+              className="uppercase lg:text-8xl xs:text-4xl sm:text-4xl -mt-14 font-titleFont font-bold tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text xx:text-center xx:mb-10 xs:text-center xs:mb-5 sm:-mt-12 sm:pt-7 md:pt-7 md:text-left lg:pt-3 lgl:pt-3 xl:pt-14"
             >
               Omega 3 Plus
             </motion.h1>
@@ -47,7 +46,7 @@ const Banner = () => {
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className="lg:text-3xl font-bodyFont tracking-wide font-light -mt-5 xs:pb-10 sm:pt-5 md:px-0 lg:px-0 text-textDark text-justify xl:pt-10 xs:text-center md:text-left"
+              className="lg:text-3xl font-bodyFont tracking-wide font-light -mt-5 xs:pb-10 sm:pt-5 md:px-0 lg:px-0 text-textDark text-justify xl:pt-10 xx:text-xs xx:pt-5 xx:text-center xs:text-center md:text-left"
             >
               No se{" "}
               <span className="bg-gradient-to-r from-colorBaseOne to-colorBaseTwo text-transparent bg-clip-text text-center">
@@ -65,7 +64,7 @@ const Banner = () => {
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="w-full h-14 text-sm rounded-md text-textLight tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorBaseTwo hover:to-colorBaseOne font-bold py-2 px-4 animate-bounce hover:animate-none border shadow-md shadow-colorBaseTwo xs:text-sm xs:h-20 xs:mt-5 uppercase font-titleSecondFont"
+                className="w-full h-14 text-sm rounded-md text-textLight tracking-wide bg-gradient-to-r from-colorBaseOne to-colorBaseTwo hover:from-colorBaseTwo hover:to-colorBaseOne font-bold py-2 px-4 animate-bounce hover:animate-none border shadow-md shadow-colorBaseTwo xs:text-sm xs:h-20 xs:mt-5 uppercase font-titleSecondFont xx:mt-5"
               >
                 Quiero mi omega ahora!
               </motion.button>

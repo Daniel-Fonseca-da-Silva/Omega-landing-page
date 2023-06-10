@@ -1,7 +1,7 @@
 import { nutricionNutrilite } from "@/public/assets";
 import Image from "next/image";
 import Link from "next/link";
-import { GiMedicines } from "react-icons/gi";
+import { BsFillHeartPulseFill } from "react-icons/bs";
 
 const AboutMe = () => {
   const items = [
@@ -59,7 +59,7 @@ const AboutMe = () => {
             <ul className="flex flex-col items-start">
               {items.map((item) => (
                 <li key={item.id} className="flex items-center py-2">
-                  <GiMedicines className="text-colorBaseOne mr-2" />
+                  <BsFillHeartPulseFill className="text-colorBaseOne mr-2" />
                   <p className="font-bodyFont xs:text-xs sm:text-sm md:text-base lg:text-1xl text-textDark">
                     {item.text}
                   </p>

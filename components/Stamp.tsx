@@ -21,10 +21,10 @@ const Stamp = () => {
             </div>
           </div>
           <div className="mx-auto md:w-2/4">
-            <h2 className="font-titleFont xs:text-xl sm:text-xl md:text-xl xs:text-center md:text-start lg:text-5xl font-semibold">
+            <h2 className="font-titleFont xx:text-center xs:text-xl sm:text-xl md:text-xl  md:text-start lg:text-5xl font-semibold">
               ¡Estás seguro al 100%!
             </h2>
-            <p className="text-base xs:text-base sm:text-base md:text-base xs:text-center md:text-start font-bodyFont tracking-wide py-6">
+            <p className="text-base xs:text-base sm:text-base md:text-base xx:text-center md:text-start font-bodyFont tracking-wide py-6">
               Si en un plazo máximo de 90 días corridos después de la compra,
               consideras que no es algo que realmente cambiará tu vida,
               simplemente envíame un único correo electrónico solicitando el
